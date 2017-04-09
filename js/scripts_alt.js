@@ -7,7 +7,7 @@ $(document).ready(function(){
             $('main').html("<p>Please type something in the search field above</p>");  
         } else {
             $('main').html("<span style='font-size: 5em;' class='fa fa-cog fa-spin fa-3x fa-fw'></span><span class='sr-only'>Searching...</span>");
-            var giphyAPI = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC";
+            var giphyAPI = "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC";
             var giphyOptions = {
                 q: searchPhrase,
                 rating: "g",

@@ -114,8 +114,18 @@ main {
 }
 
 footer {
-    margin: 2em 0;
-    font-size: small;
+    margin: 2em 0 1em 0;
+    text-align: center;
+}
+
+.giphytext {
+    font-size: 1.2em;
+    opacity: 0.5;
+}
+
+footer p {
+    font-size: 0.9em;
+    opacity: 0.5;
 }
 
 
