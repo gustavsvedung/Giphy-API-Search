@@ -1,0 +1,213 @@
+/*FONTS */
+@font-face {
+	font-family: 'News Cycle';
+	src: 
+        url("../fonts/NewsCycle-Regular.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: 
+        url("../fonts/Raleway-Regular.ttf") format('truetype');
+}
+
+
+
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* FLEXBOX */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+
+/* DESIGN */
+body {
+    margin: 0 auto;
+    padding: 1em 0.5em 0 0.5em;
+    background: #E6E6DC;
+    color: #00628B;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.themeswitch {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 0.8em;
+    opacity: 0.3;
+}
+
+p {
+    padding: 0 1em;
+}
+
+a:hover {
+    color: #008EC9;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+#searchbar {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+input {
+    border: solid 2px #81A594;
+    outline: none;
+    border-radius: 1.5em; 
+    background: #E6E6DC;
+    width: 76%;
+    height: 2.5em;
+    padding-left: 1em;
+}
+
+button {
+    border: solid 2px #81A594;
+    outline: none;   
+    border-radius: 1.5em;
+    background: #E6E6DC;
+    width: 22%;
+    height: 2.5em;
+}    
+
+button:hover {
+    background: white;
+}
+
+main {
+    padding-top: 2em;
+    text-align: center;
+    max-width: 100%;
+}
+ 
+.thumbnail {
+    width: 45vw;
+    height: 20vh;
+    object-fit: cover;
+    padding: 0.1em 0.2em;
+}
+
+footer {
+    margin: 2em 0;
+    font-size: small;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* small devices and landscape phones */
+@media screen and (min-width: 565px) and (orientation:landscape){
+    .thumbnail {
+        height: 60vh;
+    }
+}
+
+
+
+/* tablets */
+@media screen and (min-width: 768px) {
+    .thumbnail {
+        width: 30vw;
+        height: 18vh;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    #searchbar {
+        width: 65vw;
+    }
+
+    main {
+        padding-top: 3em;
+    }
+}
+
+
+
+/* desktops */
+@media screen and (min-width: 992px) {
+    .thumbnail {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    #searchbar {
+        width: 50vw;
+    }
+}
+
+
+
+/* large desktops */
+@media screen and (min-width: 1200px) {
+    .thumbnail {
+        width: 15vw;
+    }
+
+    #searchbar {
+        max-width: 620px;
+    }
+}
+
+/* 4K */
+@media screen and (min-width: 2550px) {
+   p {
+       font-size: 1.5em;
+   }
+
+   .thumbnail {
+        height: 25vh;
+    }
+
+    h1 {
+        font-size: 5.5em;
+    }
+
+    #searchbar {
+        max-width: 920px;
+    }
+
+    #searchbar,
+    input,
+    button {
+        height: 3em;
+    }
+
+    input, 
+    button {
+        font-size: 1.3em;
+    }
+
+    main {
+        padding-top: 5em;
+    }
+}
